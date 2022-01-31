@@ -7,7 +7,7 @@ public class StatisticsService {
      * @param incomes - array of incomes
      * @return - index of first max value
      */
-    public long findMax(long[] incomes) {
+    public long findMax(long[] incomes) { // максимальное значение
         long current_max_index = 0;
         long current_max = incomes[0];
         for (long income : incomes)
@@ -16,7 +16,7 @@ public class StatisticsService {
         return current_max;
     }
 
-    public long findMin(long[] incomes) {
+    public long findMin(long[] incomes) { // минимальное значение
         long current_min_index = 0;
         long current_min = incomes[0];
         for (long income : incomes)
@@ -25,7 +25,7 @@ public class StatisticsService {
         return current_min;
     }
 
-    public long Total(long[] incomes) {
+    public long Total(long[] incomes) { // сумма значений
         long sum = 0;
         for (long income : incomes) {
             sum += income;
